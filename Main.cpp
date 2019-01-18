@@ -24,6 +24,10 @@ void Nappula::setUnicode(wstring _unicode)
 {
 	unicode = _unicode;
 }
+wstring Nappula::getUnicode()
+{
+	return unicode;
+}
 void Nappula::setVari(int Vari)
 {
 	vari = Vari;
