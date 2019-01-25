@@ -1,4 +1,7 @@
 #include "Asema.h"
+using namespace std;
+
+
 Nappula* Asema::vk = new Nappula(L"\u2654", 0, VK);
 Nappula* Asema::vd = new Nappula(L"\u2655", 0, VD);
 Nappula* Asema::vt = new Nappula(L"\u2656", 0, VT);
@@ -62,6 +65,56 @@ Asema::Asema()
 	lauta[6][6] = ms;
 	lauta[7][6] = ms;
 }
+
+
+
+void Asema::paivitaAsema(Siirto * siirto)
+{
+
+
+}
+
+int Asema::getSiirtovuoro()
+{
+	return 0;
+}
+
+void Asema::setSiirtovuoro(int vari)
+{
+
+
+}
+
+bool Asema::getOnkoValkeaKuningasLiikkunut()
+{
+	return false;
+}
+
+bool Asema::getOnkoMustaKuningasLiikkunut()
+{
+	return false;
+}
+
+bool Asema::getOnkoValkeaDTliikkunut()
+{
+	return false;
+}
+
+bool Asema::getOnkoValkeaKTliikkunut()
+{
+	return false;
+}
+
+bool Asema::getOnkoMustaDTliikkunut()
+{
+	return false;
+}
+
+bool Asema::getOnkoMustaKTliikkunut()
+{
+	return false;
+}
+
 
 /*
 VK, L"\u2654
