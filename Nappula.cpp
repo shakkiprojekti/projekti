@@ -1,8 +1,8 @@
 #include "Nappula.h"
 #include <iostream>
+using namespace std;
 
-
-Nappula::Nappula(std::wstring unicode, int vari, int koodi) {
+Nappula::Nappula(wstring unicode, int vari, int koodi) {
 
 	_unicode = unicode;
 	_vari = vari;
@@ -24,7 +24,7 @@ int Nappula::getKoodi() {
 
 }
 
-void Nappula::setUnicode(std::wstring unicode) {
+void Nappula::setUnicode(wstring unicode) {
 
 	_unicode = unicode;
 
