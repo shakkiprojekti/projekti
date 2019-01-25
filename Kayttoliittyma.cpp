@@ -1,5 +1,7 @@
 #include "Kayttoliittyma.h"
-
+#include "Siirto.h"
+#include <string>
+using namespace std;
 
 Kayttoliittyma::Kayttoliittyma(Asema * asema)
 {
@@ -19,7 +21,7 @@ void Kayttoliittyma::piirraLauta()
 		if (y % 2 == 0) {
 
 			for (int x = 0; x < 8; x++) {
-				//std::wcout << _asema->lauta[x][y];
+				//wcout << _asema->lauta[x][y];
 				if (x % 2 == 0) {
 					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), BACKGROUND_INTENSITY | BACKGROUND_BLUE);
 					wcout << " ";
@@ -53,7 +55,7 @@ void Kayttoliittyma::piirraLauta()
 
 				else {
 					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), BACKGROUND_INTENSITY | BACKGROUND_BLUE);
-					std::wcout << " ";
+					wcout << " ";
 				}
 
 				if (_asema->lauta[x][y] == nullptr) {
@@ -68,7 +70,7 @@ void Kayttoliittyma::piirraLauta()
 			}
 		}
 
-		std::wcout << std::endl;
+		wcout << endl;
 	}
 
 	/*for (int y = 0; y < 8; y++) {
@@ -83,7 +85,23 @@ void Kayttoliittyma::piirraLauta()
 		}
 	}*/
 
-}
+};
+
+/*void vastustajanSiirto() 
+{
+	wstring x;
+	int y;
+	int z;
+	wcout << "anna nappula T/R/L/D/K \n";
+	wcin >> x;
+	wcout << "anna alkuruutu esim g1 \n";
+	wcin >> y;
+	wcout << "anna loppuruutu esim f3 \n";
+	wcin >> z;
+	//Siirto(y , z);
+}*/
+
+
 
 
 
