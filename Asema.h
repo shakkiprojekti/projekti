@@ -1,5 +1,6 @@
 #pragma once
 #include "Nappula.h"
+#include "Siirto.h"
 
 class Asema : public Nappula {
 
@@ -21,7 +22,25 @@ public:
 	static Nappula* mr;
 	static Nappula* ms;
 
+	void paivitaAsema(Siirto* siirto);
+	int getSiirtovuoro();
+	void setSiirtovuoro(int vari);
+	bool getOnkoValkeaKuningasLiikkunut();
+	bool getOnkoMustaKuningasLiikkunut();
+	bool getOnkoValkeaDTliikkunut();
+	bool getOnkoValkeaKTliikkunut();
+	bool getOnkoMustaDTliikkunut();
+	bool getOnkoMustaKTliikkunut();
+
+
 private:
+	int siirtovuoro;
+	bool onkoValkeaKuningasLiikkunut;
+	bool onkoMustaKuningasLiikkunut;
+	bool onkoValkeaDTliikkunut;
+	bool onkoValkeaKTliikkunut;
+	bool onkoMustaDTliikkunut;
+	bool onkoMustaKTliikkunut;
 
 };
 
